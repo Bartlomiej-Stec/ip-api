@@ -1,0 +1,32 @@
+{
+    "name": "barstec/ip-api",
+    "description": "Package for handling the ipapi.is API in Laravel",
+    "keywords": ["laravel", "vpn", "ip", "api", "package", "fraud detector", "vpn detector"],
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Barstec\\IpApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bartłomiej Stec",
+            "email": "itscriptcoding@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^11.25",
+        "guzzlehttp/guzzle": "^7.9"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Barstec\\IpApi\\IpApiServiceProvider"
+            ],
+            "aliases": {
+                "IpApi": "Barstec\\IpApi\\IpApiFacade"
+            }
+        }
+    }
+}
